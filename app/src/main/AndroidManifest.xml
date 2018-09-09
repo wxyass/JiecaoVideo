@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jiec">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".ApplicationDemo"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--在ListView中播放视频主界面-->
+        <activity
+            android:name=".listvideo.ActivityListView"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--在普通ListView中播放-->
+        <activity
+            android:name=".listvideo.ActivityListViewNormal"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--在ViewPager中的ListView中播放-->
+        <activity
+            android:name=".listvideo.ActivityListViewFragmentViewPager"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--分类型的ListView中播放-->
+        <activity
+            android:name=".listvideo.ActivityListViewMultiHolder"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--在RecyclerView中播放-->
+        <activity
+            android:name=".listvideo.ActivityListViewRecyclerView"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--常用Api(UI界面)主界面-->
+        <activity
+            android:name=".apivideo.ActivityApi"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--小小的改变播放UI-->
+        <activity
+            android:name=".apivideo.ActivityApiUISmallChange"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--在WebView中播放-->
+        <activity
+            android:name=".webvideo.ActivityWebView"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--小屏播放主界面-->
+        <activity
+            android:name=".tinyvideo.ActivityTinyWindow"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--直接全屏播放-->
+        <activity
+            android:name=".directvideo.ActivityDirectPlay"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--普通ListView播放,并滚动时自动小屏-->
+        <activity
+            android:name=".tinyvideo.ActivityTinyWindowListViewNormal"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!--分类型ListView播放,并滚动时自动小屏-->
+        <activity
+            android:name=".tinyvideo.ActivityTinyWindowListViewMultiHolder"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!--普通RecycleView播放,并滚动时自动小屏-->
+        <activity
+            android:name=".tinyvideo.ActivityTinyWindowRecycleView"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!--分类型RecycleView播放,并滚动时自动小屏-->
+        <activity
+            android:name=".tinyvideo.ActivityTinyWindowRecycleViewMultiHolder"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!--全屏时,设置横向-->
+        <activity
+            android:name=".apivideo.ActivityApiOrientation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!--全屏时,根据重力感应设置取向-->
+        <activity
+            android:name=".apivideo.ActivityApiExtendsNormal"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!--选择播放引擎主界面-->
+        <activity
+            android:name=".apivideo.ActivityApiCustomMediaPlayer"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
