@@ -26,6 +26,12 @@
 
         <!--在ListView中播放视频主界面-->
         <activity
+            android:name=".JieCaoMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!--在ListView中播放视频主界面-->
+        <activity
             android:name=".listvideo.ActivityListView"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"/>
